@@ -19,8 +19,7 @@ export default function Features() {
         y:600,
         scrollTrigger: {
           trigger: '.phone',
-          start: 'top 50px',
-          end:'bottom top',
+          start: 'center 50px',
           scrub: true,
         }
       })
