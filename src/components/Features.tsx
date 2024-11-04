@@ -2,7 +2,6 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import  { FadeText } from "@/components/ui/fade-text";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
