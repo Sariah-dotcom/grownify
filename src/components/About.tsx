@@ -5,9 +5,9 @@ export default function About() {
     <div className="gap-3 lg:flex lg:items-center lg:gap-10">
       <div className="lg:w-1/2 lg:pl-10">
         <h2 className="text-2xl font-bold lg:text-left lg:text-5xl">Tired of cosplaying as <br />an adult? Look no further!</h2>
-        <p className="text-center lg:text-left mt-3">
+        <p className="text-center lg:text-left mt-3 px-8">
           Grownify helps you to tackle adulthood the right way. <br /><br />
-          Track bills, plan groceries, call your mom, <br /> and prioritize self-care all on one app. 
+          Track bills, plan groceries, call your mom, and prioritize self-care all on one app. 
         </p>
       </div>
       

@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <div ref={navRef} className="header py-5 px-3 flex justify-between items-center lg:px-10 lg:mb-10">
       <img className="h-12 w-12" src="/logo.png" alt="logo" />
-      <Button className="font-inter rounded-full">Get Started</Button>
+      <Button className="font-inter rounded-full bg-black">Get Started</Button>
     </div>
   )
 }

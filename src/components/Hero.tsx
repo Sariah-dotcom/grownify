@@ -99,8 +99,8 @@ export default function Hero() {
       </div>
 
       <div ref={badegRef} className="flex gap-2">
-        <img src="/appstore.png" alt="app store badge" />
-        <img src="/googleplay.png" alt="google play store badge" />
+        <img className="h-8" src="/appstore.png" alt="app store badge" />
+        <img className="h-8" src="/googleplay.png" alt="google play store badge" />
       </div>
 
       <div className="mt-5 w-full flex overflow-x-hidden justify-center py-8 lg:h-[100vh]">
