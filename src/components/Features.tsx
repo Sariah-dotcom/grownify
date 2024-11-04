@@ -14,33 +14,22 @@ export default function Features() {
   const paragraphRef2 = useRef<HTMLParagraphElement | null>(null);
   useGSAP(
     () => {
-      gsap.to('.phone', 
-      {
-        y:600,
-        scrollTrigger: {
-          trigger: '.phone',
-          start: 'center',
-          scrub: true,
+    gsap.fromTo('.title, .feature-description, .phone', {
+      x:-300,
+      opacity: 0,
+    },
+    {
+      x:0,
+      opacity: 1,
+      duration: 0.6,
+      stagger:0.3,
+      scrollTrigger: {
+        trigger: '.features',
+          start: 'top 100px',
         }
       })
 
-      gsap.fromTo('.title, .feature-description', {
-        x:-300,
-        opacity: 0,
-
-      },
-        {
-          x:0,
-          opacity: 1,
-          duration: 0.6,
-          stagger:0.3,
-          scrollTrigger: {
-            trigger: '.features',
-            start: 'top 100px',
-          }
-        })
-
-        gsap.fromTo('.title-2, .feature-description-2', {
+      gsap.fromTo('.title-2, .feature-description-2, .phone-2', {
           x:-300,
           opacity: 0,
   
@@ -60,7 +49,7 @@ export default function Features() {
   return (
     <section>
 
-      <div className="features flex flex-col items-center h-[70vh]">
+      <div className="features flex flex-col items-center">
         <div className="px-10 text-center mb-10">
           <h2 ref={titleRef} className="title text-2xl font-semibold mb-5">Build Independence</h2>
           <p ref={paragraphRef} className='feature-description'>Grownify helps you track of habits like grocery shopping, meal prepping, or keeping living spaces organized which are essential for developing self-sufficiency and independence.</p>
@@ -68,11 +57,12 @@ export default function Features() {
         <img ref={imgRef} src="/iphone.png" alt="iphone" className='phone' />
       </div>
 
-      <div className="feature-2 flex flex-col items-center h-[70vh]">
+      <div className="feature-2 flex flex-col items-center mt-[3rem]">
         <div className="px-10 text-center mb-10">
           <h2 ref={titleRef2} className="title-2 text-2xl font-semibold mb-5">Self-Care and Mental Health</h2>
           <p ref={paragraphRef2} className='feature-description-2'>Track and be reminded of relaxation, mindfulness, journaling, or digital detox habits that can help you manage stress and prioritize your mental health.</p>
         </div>
+        <img ref={imgRef} src="/iphone.png" alt="iphone" className='phone-2' />
       </div>
     </section>
     

@@ -103,7 +103,7 @@ export default function Hero() {
         <img className="h-8" src="/googleplay.png" alt="google play store badge" />
       </div>
 
-      <div className="mt-5 w-full flex overflow-x-hidden justify-center py-8 lg:h-[100vh]">
+      <div className="mt-5 w-full flex overflow-x-hidden h-[60vh] justify-center py-8 lg:h-[100vh]">
         <img ref={leftPhoneRef} src="/iphone.png" alt="" />
         <img ref={middlePhoneRef} src="/iphone.png" alt="" />
         <img ref={rightPhoneRef} src="/iphone.png" alt="" />
