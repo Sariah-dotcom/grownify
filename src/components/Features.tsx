@@ -55,7 +55,7 @@ export default function Features() {
           <p ref={paragraphRef} className='feature-description'>Grownify helps you track of habits like grocery shopping, meal prepping, or keeping living spaces organized which are essential for developing self-sufficiency and independence.</p>
         </div>
         <div className='lg:w-1/2 flex justify-center'>
-          <img ref={imgRef} src="/test-3.png" alt="iphone" className='h-[25rem] lg:h-[30rem]' />
+          <img ref={imgRef} src="/test-3.png" alt="iphone" className='phone h-[25rem] lg:h-[30rem]' />
         </div>
       </div>
 
@@ -65,7 +65,7 @@ export default function Features() {
           <p ref={paragraphRef2} className='feature-description-2 lg:text-left'>Track and be reminded of relaxation, mindfulness, journaling, or digital detox habits that can help you manage stress and prioritize your mental health.</p>
         </div>
         <div className='lg:w-1/2 flex justify-center'>
-          <img ref={imgRef} src="/test-4.png" alt="iphone" className='h-[25rem] lg:h-[30rem]' />
+          <img ref={imgRef} src="/test-4.png" alt="iphone" className='phone-2 h-[25rem] lg:h-[30rem]' />
         </div>
       </div>
     </section>
