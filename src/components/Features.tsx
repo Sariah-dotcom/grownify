@@ -49,20 +49,24 @@ export default function Features() {
   return (
     <section>
 
-      <div className="features flex flex-col items-center">
-        <div className="px-10 text-center mb-10">
-          <h2 ref={titleRef} className="title text-2xl font-semibold mb-5">Build Independence</h2>
+      <div className="features flex flex-col items-center lg:flex-row">
+        <div className="px-10 text-center mb-10 lg:w-1/2 lg:text-left">
+          <h2 ref={titleRef} className="title text-2xl font-semibold mb-5 lg:text-left lg:text-4xl">Build Independence</h2>
           <p ref={paragraphRef} className='feature-description'>Grownify helps you track of habits like grocery shopping, meal prepping, or keeping living spaces organized which are essential for developing self-sufficiency and independence.</p>
         </div>
-        <img ref={imgRef} src="/iphone.png" alt="iphone" className='phone' />
+        <div className='lg:w-1/2 flex justify-center'>
+          <img ref={imgRef} src="/test-3.png" alt="iphone" className='h-[25rem] lg:h-[30rem]' />
+        </div>
       </div>
 
-      <div className="feature-2 flex flex-col items-center mt-[3rem]">
-        <div className="px-10 text-center mb-10">
-          <h2 ref={titleRef2} className="title-2 text-2xl font-semibold mb-5">Self-Care and Mental Health</h2>
-          <p ref={paragraphRef2} className='feature-description-2'>Track and be reminded of relaxation, mindfulness, journaling, or digital detox habits that can help you manage stress and prioritize your mental health.</p>
+      <div className="feature-2 flex flex-col items-center mt-[5rem] lg:flex-row lg:text-left">
+        <div className="px-10 text-center mb-10 lg:w-1/2">
+          <h2 ref={titleRef2} className="title-2 text-2xl font-semibold mb-5 lg:text-left lg:text-4xl">Self-Care and Mental Health</h2>
+          <p ref={paragraphRef2} className='feature-description-2 lg:text-left'>Track and be reminded of relaxation, mindfulness, journaling, or digital detox habits that can help you manage stress and prioritize your mental health.</p>
         </div>
-        <img ref={imgRef} src="/iphone.png" alt="iphone" className='phone-2' />
+        <div className='lg:w-1/2 flex justify-center'>
+          <img ref={imgRef} src="/test-4.png" alt="iphone" className='h-[25rem] lg:h-[30rem]' />
+        </div>
       </div>
     </section>
     
