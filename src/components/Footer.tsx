@@ -3,7 +3,7 @@ import { RiTwitterXFill, RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <div className="text-white bg-black flex flex-col gap-10 p-10">
+    <div className="text-white bg-dark-grey flex flex-col gap-10 p-10">
         
         <div className="flex flex-col font-inter">
             <img className="h-24 w-24" src="/logo.png" alt="" />

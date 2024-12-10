@@ -7,7 +7,8 @@ export default {
   ],
   theme: {
   	fontFamily: {
-  		inter: ['Inter', 'sans-serif']
+  		inter: ['Inter', 'sans-serif'],
+		plus: ['Plus Jakarta Sans', 'sans-serif']
   	},
   	extend: {
   		borderRadius: {
@@ -16,7 +17,10 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
-			'light-green': '#90b63a',
+			'light-green': '#D7FF73',
+			'light-grey': '#484646',
+			'dark-grey': '#0F0F0F',
+			'white': '#fff',
   			'color-1': 'hsl(var(--color-1))',
   			'color-2': 'hsl(var(--color-2))',
   			'color-3': 'hsl(var(--color-3))',

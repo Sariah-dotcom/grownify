@@ -13,18 +13,18 @@ export default function Hero() {
   useEffect(()=>{
     gsap.fromTo(leftPhoneRef.current,{
         opacity: 0,
-        y:30,
+        y:150,
       },
       {
         opacity:1,
-        y:-15,
+        y:90,
         duration: 1,
         ease: "power2.out"
     });
 
     gsap.fromTo(middlePhoneRef.current,{
       opacity: 0,
-      y:-30,
+      y:-50,
     },
     {
       opacity:1,
@@ -35,11 +35,11 @@ export default function Hero() {
 
     gsap.fromTo(rightPhoneRef.current,{
       opacity: 0,
-      y:30,
+      y:150,
     },
     {
       opacity:1,
-      y:-15,
+      y:90,
       duration: 1,
       ease: "power2.out"
     });
@@ -52,7 +52,7 @@ export default function Hero() {
       opacity:1,
       y:0,
       duration: 0.5,
-      delay: 2,
+      delay: 2.5,
       ease: "power2.out"
     });
 
@@ -64,46 +64,50 @@ export default function Hero() {
       opacity:1,
       y:0,
       duration: 0.5,
-      delay: 1.9,
+      delay: 4.5,
       ease: "power2.out"
     });
   }, [])
 
   return (
-    <section className="flex flex-col h-[100vh] justify-center gap-8 items-center lg:h-auto">
-
-      <div className="text-center mt-[3rem]">
+    <section className="flex flex-col justify-center items-center text-center gap-[1.5rem] mt-[5rem] lg:mt-[2rem]">
+      
+      <div className="relative -z-1 lg:pl-10 flex flex-col gap-1">
         <FadeText
-          className="lg:text-7xl text-4xl font-bold font-inter text-black dark:text-white"
-          direction="up"
+          className="text-4xl font-bold font-plus lg:text-6xl"
+          direction="up" 
           framerProps={{
-            show: { transition: { delay: 0.7 } },
+            show: { transition: { delay: 1 } },
           }}
           text="Your Companion"
         />
 
         <FadeText
-          className="lg:text-7xl text-4xl font-bold font-inter text-black dark:text-white"
-          direction="left"
+          className="text-4xl font-bold font-plus lg:text-6xl"
+          direction="up" 
           framerProps={{
-            show: { transition: { delay: 1 } },
+            show: { transition: { delay: 1.3 } },
           }}
           text="to Adulting"
         />
-        
-        <p ref={textRef} className="mt-3 text-sm lg:text-lg">Stay on top of the important <br /> stuff—one habit at a time.</p>
       </div>
 
-      <div ref={badegRef} className="flex gap-2">
-        <img className="h-8" src="/appstore.png" alt="app store badge" />
-        <img className="h-8" src="/googleplay.png" alt="google play store badge" />
+      <p ref={textRef} className="text-light-grey text-center text-sm px-[5rem]">Stay on top of the important stuff—one habit at a time.</p>
+
+      <div ref={badegRef} className="flex gap-3 lg:gap-10">
+        <img className="h-10" src="/badge-1.png" alt="app store badge" />
+        <img className="h-10" src="/badge-2.png" alt="google play store badge" />
       </div>
 
-      <div className="mt-5 w-full flex overflow-x-hidden h-[60vh] justify-center py-8 lg:h-auto">
-        <img className="lg:h-[30rem]" ref={leftPhoneRef} src="/test.png" alt="" />
-        <img className="lg:h-[30rem]" ref={middlePhoneRef} src="/test-2.png" alt="" />
-        <img className="lg:h-[30rem]" ref={rightPhoneRef} src="/test-3.png" alt="" />
+      <div className="flex justify-center items-center">
+        <div className="absolute bg-light-green w-[90%] h-[50vh] rounded-[2rem] lg:h-[50vh]"></div>
+        <div className="w-full flex overflow-x-hidden justify-center py-8 h-[90vh] lg:h-[110vh]">
+          <img className="h-[25rem] lg:h-[30rem]" ref={leftPhoneRef} src="/test.png" alt="" />
+          <img className="h-[25rem] lg:h-[30rem]" ref={middlePhoneRef} src="/test-2.png" alt="" />
+          <img className="h-[25rem] lg:h-[30rem]" ref={rightPhoneRef} src="/test-3.png" alt="" />
+        </div>
       </div>
+
     </section>
   )
 }

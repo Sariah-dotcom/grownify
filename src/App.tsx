@@ -1,6 +1,5 @@
 import Hero from './components/Hero.tsx';
 import Header from './components/Header.tsx';
-import { MarqueeDemo } from './components/Marquee.tsx';
 import About from './components/About.tsx';
 import Features from './components/Features.tsx';
 import Downloads from './components/Downloads.tsx';
@@ -11,16 +10,14 @@ export default function App() {
   return (
     <div>
       <Header />
-      <div className='flex flex-col gap-[5rem]'>
-        <Hero />
+      <Hero />
+      <div className='flex flex-col gap-[8rem]'>
         <About />
         <Features />
         <Downloads />
-        <MarqueeDemo />
         <CTA />
         <Footer />
       </div>
-      
     </div>
   )
 }

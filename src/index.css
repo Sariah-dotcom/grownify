@@ -18,28 +18,39 @@
     --color-5: 90 100% 63%
   }
 }
+
 body {
-  overflow-x: hidden;
+  background-color: #fff;
 }
 
-h1, h2, p {
+p {
   font-family: 'Inter', sans-serif;
 }
 
-h1,h2 {
+h2, h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
 }
 
-section, .features{
+section{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
 
-.description {
-  text-align: center;
-  padding: 1rem 2rem;
 }
 

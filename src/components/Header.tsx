@@ -16,15 +16,15 @@ export default function Header() {
       {
         opacity:1,
         duration:0.8,
-        delay:2.8,
+        delay:4.5,
       }
   )
   })
 
   return (
-    <div ref={navRef} className="header py-5 px-3 flex justify-between items-center lg:px-10 lg:mb-10">
+    <nav ref={navRef} className="header py-5 px-3 flex justify-between items-center lg:px-10">
       <img className="h-12 w-12" src="/logo.png" alt="logo" />
       <Button className="font-inter rounded-full bg-black">Get Started</Button>
-    </div>
+    </nav>
   )
 }
